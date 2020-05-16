@@ -84,19 +84,6 @@ chmod 777 termux_install.sh
 
 ## Usage
 
-```bash
-python3 seeker.py -h
-
-usage: seeker.py [-h] [-s SUBDOMAIN]
-
-optional arguments:
-  -h, --help                              show this help message and exit
-  -s SUBDOMAIN, --subdomain Subdomain 	  Provide Subdomain for Serveo URL ( Optional )
-  -k KML, --kml KML                       Provide KML Filename ( Optional )
-  -t TUNNEL, --tunnel TUNNEL              Specify Tunnel Mode [manual]
-
-# Example
-
 
 # Docker Usage Any Platform!
 
@@ -109,6 +96,19 @@ optional arguments:
 #### Step 3
 ```docker run --rm -t --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080```
 
+
+```bash
+python3 seeker.py -h
+
+usage: seeker.py [-h] [-s SUBDOMAIN]
+
+optional arguments:
+  -h, --help                              show this help message and exit
+  -s SUBDOMAIN, --subdomain Subdomain 	  Provide Subdomain for Serveo URL ( Optional )
+  -k KML, --kml KML                       Provide KML Filename ( Optional )
+  -t TUNNEL, --tunnel TUNNEL              Specify Tunnel Mode [manual]
+
+# Example
 
 # SERVEO 
 ########

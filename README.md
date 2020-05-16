@@ -97,6 +97,19 @@ optional arguments:
 
 # Example
 
+
+# Docker Usage Any Platform!
+
+#### Step 1
+```docker network create ngroknet```
+
+#### Step 2
+```docker run --rm -t --net ngroknet --name seeker geojoy/seeker python3 seeker.py -t manual```
+
+#### Step 3
+```docker run --rm -t --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080```
+
+
 # SERVEO 
 ########
 python3 seeker.py
@@ -119,24 +132,6 @@ python3 seeker.py --tunnel manual --subdomain zomato
 
 #-----------------------------------#
 
-# Docker Usage
-##############
-
-# SERVEO
-########
-docker run -t --rm geojoy/seeker
-
-# NGROK
-#######
-
-# Step 1
-docker network create ngroknet
-
-# Step 2
-docker run --rm -t --net ngroknet --name seeker geojoy/seeker python3 seeker.py -t manual
-
-# Step 3
-docker run --rm -t --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080
 ```
 
 ## Known Problems

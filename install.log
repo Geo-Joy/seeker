@@ -1,0 +1,4 @@
+install.sh: line 6: apt-get: command not found
+install.sh: line 8: apt-get: command not found
+install.sh: line 10: apt-get: command not found
+install.sh: line 12: pip3: command not found

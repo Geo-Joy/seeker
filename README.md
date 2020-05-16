@@ -16,6 +16,8 @@ READ DESCRIPTION  -> <a href="https://github.com/thewhiteh4t/seeker/blob/master/
 #### Step 3
 ```docker run --rm -t --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080```
 
+# Download log CSV file
+```docker cp seeker:/seeker/db/results.csv C:\Users\megeo\Downloads```
 
 # Build from scratch:
 ## Modify - changes images, templates or codebase

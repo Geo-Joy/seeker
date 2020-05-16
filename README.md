@@ -1,24 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/DIpuNTI.jpg"></p>
-
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3-brightgreen.svg?style=plastic">
-<img src="https://img.shields.io/badge/Docker-✔-blue.svg?style=plastic">
-</p>
-
-<p align="center">
-  <a href="https://twitter.com/thewhiteh4t"><b>Twitter</b></a>
-  <span> - </span>
-  <a href="https://t.me/thewhiteh4t"><b>Telegram</b></a>
-  <span> - </span>
-  <a href="https://thewhiteh4t.github.io"><b>thewhiteh4t's Blog</b></a>
-</p>
-
-<p align="center">
-  <br>
-  <b>Available in</b>
-  <br>
-  <img src="https://i.imgur.com/1wJVDV5.png">
-</p>
+#### PS: use docker method on windows!
 
 Concept behind Seeker is simple, just like we host phishing pages to get credentials why not host a fake page that requests your location like many popular location based websites. Read more on <a href="https://thewhiteh4t.github.io"> thewhiteh4t's Blog </a>.Seeker Hosts a fake website on **In Built PHP Server** and uses **Serveo** to generate a link which we will forward to the target, website asks for Location Permission and if the target allows it, we can get :
 
@@ -75,7 +55,7 @@ You can choose a template which will be used by seeker from these :
 ### Kali Linux / Ubuntu / Parrot OS
 
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
+git clone https://github.com/Geo-Joy/seeker.git
 cd seeker/
 chmod 777 install.sh
 ./install.sh
@@ -90,13 +70,13 @@ pacman -S seeker
 ### Docker
 
 ```bash
-docker pull thewhiteh4t/seeker
+docker pull geojoy/seeker
 ```
 
 ### Termux
 
 ```bash
-git clone https://github.com/thewhiteh4t/seeker.git
+git clone https://github.com/Geo-Joy/seeker.git
 cd seeker/
 chmod 777 termux_install.sh
 ./termux_install.sh
@@ -144,7 +124,7 @@ python3 seeker.py --tunnel manual --subdomain zomato
 
 # SERVEO
 ########
-docker run -t --rm thewhiteh4t/seeker
+docker run -t --rm geojoy/seeker
 
 # NGROK
 #######
@@ -153,7 +133,7 @@ docker run -t --rm thewhiteh4t/seeker
 docker network create ngroknet
 
 # Step 2
-docker run --rm -t --net ngroknet --name seeker thewhiteh4t/seeker python3 seeker.py -t manual
+docker run --rm -t --net ngroknet --name seeker geojoy/seeker python3 seeker.py -t manual
 
 # Step 3
 docker run --rm -t --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080

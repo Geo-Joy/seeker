@@ -19,7 +19,7 @@ READ DESCRIPTION <a href="https://github.com/thewhiteh4t/seeker/blob/master/READ
 
 ``` git clone https://github.com/Geo-Joy/seeker.git```
 
-``` docker build -t geojoy/seeker . ~~~
+``` docker build -t geojoy/seeker . ```
 
 #### after build use the commands in Docker usage to start your servers
 

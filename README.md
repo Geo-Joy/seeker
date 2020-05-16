@@ -2,6 +2,9 @@ READ DESCRIPTION  -> <a href="https://github.com/thewhiteh4t/seeker/blob/master/
 
 ## Usage
 
+### Install docker desktop -> <a href="https://www.docker.com/products/docker-desktop">HERE</a> 
+~~~ https://www.docker.com/products/docker-desktop ```
+
 # Docker Usage Any Platform!
 
 #### Step 1

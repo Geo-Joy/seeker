@@ -1,4 +1,4 @@
-READ DESCRIPTION <a href="https://github.com/thewhiteh4t/seeker/blob/master/README.md">HERE</a>  -> 
+READ DESCRIPTION  -> <a href="https://github.com/thewhiteh4t/seeker/blob/master/README.md">HERE</a> 
 
 ## Usage
 

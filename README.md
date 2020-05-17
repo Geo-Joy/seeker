@@ -8,13 +8,13 @@ READ DESCRIPTION  -> <a href="https://github.com/thewhiteh4t/seeker/blob/master/
 # Docker Usage Any Platform!
 
 #### Step 1
-```docker network create ngroknet```
+```docker network create learnwithgeo```
 
 #### Step 2
-```docker run --rm -t --net ngroknet --name seeker geojoy/seeker python3 seeker.py -t manual```
+```docker run --rm -t --net learnwithgeo --name seeker geojoy/seeker python3 seeker.py -t manual```
 
 #### Step 3
-```docker run --rm -t --net ngroknet --name ngrok wernight/ngrok ngrok http seeker:8080```
+```docker run --rm -t --net learnwithgeo --name ngrok wernight/ngrok ngrok http seeker:8080```
 
 # Download log CSV file
 ```docker cp seeker:/seeker/db/results.csv C:\Users\megeo\Downloads```

@@ -16,6 +16,10 @@ READ DESCRIPTION  -> <a href="https://github.com/thewhiteh4t/seeker/blob/master/
 #### Step 3
 ```docker run --rm -t --net learnwithgeo --name ngrok wernight/ngrok ngrok http seeker:8080```
 
+#### Step 4
+clean up 
+```docker system prune```
+
 # Download log CSV file
 ```docker cp seeker:/seeker/db/results.csv C:\Users\megeo\Downloads```
 

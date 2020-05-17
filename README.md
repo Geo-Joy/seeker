@@ -11,10 +11,10 @@ READ DESCRIPTION  -> <a href="https://github.com/thewhiteh4t/seeker/blob/master/
 ```docker network create learnwithgeo```
 
 #### Step 2
-```docker run --rm -t --net -i learnwithgeo --name seeker geojoy/seeker python3 seeker.py -t manual```
+```docker run --rm -t -i --net learnwithgeo --name seeker geojoy/seeker python3 seeker.py -t manual```
 
 #### Step 3
-```docker run --rm -t --net -i learnwithgeo --name ngrok wernight/ngrok ngrok http seeker:8080```
+```docker run --rm -t -i --net learnwithgeo --name ngrok wernight/ngrok ngrok http seeker:8080```
 
 #### Step 4
 clean up 

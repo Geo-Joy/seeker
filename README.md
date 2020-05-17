@@ -18,7 +18,7 @@ READ DESCRIPTION  -> <a href="https://github.com/thewhiteh4t/seeker/blob/master/
 
 #### Step 4
 clean up 
-```docker system prune```
+```docker system prune --all```
 
 # Download log CSV file
 ```docker cp seeker:/seeker/db/results.csv C:\Users\megeo\Downloads```
